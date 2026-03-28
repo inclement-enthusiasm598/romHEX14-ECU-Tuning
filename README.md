@@ -7,7 +7,9 @@
 <br>
 
 <img src="https://img.shields.io/badge/version-1.0.0--alpha-blue?style=for-the-badge" alt="Version">
-<img src="https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows" alt="Windows">
+<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
+<img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
 <img src="https://img.shields.io/badge/Qt-6.10-41CD52?style=for-the-badge&logo=qt" alt="Qt 6">
 <img src="https://img.shields.io/badge/license-LGPL--3.0-orange?style=for-the-badge" alt="License">
 
@@ -17,11 +19,33 @@
 
 <br>
 
-[**Download Latest Release**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest) · [**Website**](https://romhex14.com) · [**Documentation**](https://romhex14.com/docs)
+[**Download Latest Release**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest)&nbsp;&nbsp;·&nbsp;&nbsp;[**Website**](https://romhex14.com)&nbsp;&nbsp;·&nbsp;&nbsp;[**Documentation**](https://romhex14.com/docs)
+
+---
+
+<br>
+
+<img src="screenshot.png" alt="romHEX 14 Screenshot" width="100%">
+
+<br>
+
+*Map editor with 2D/3D visualization, AI assistant, hex view, and multi-language map labels*
 
 ---
 
 </div>
+
+<br>
+
+## Downloads
+
+| Platform | Download | Notes |
+|:---:|:---:|:---|
+| <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white"> | [**RX14-Setup.exe**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest/download/RX14-Setup.exe) | Windows 10/11 (64-bit) — Single-file installer |
+| <img src="https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white"> | [**RX14.dmg**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest/download/RX14.dmg) | macOS 12+ (Apple Silicon & Intel) |
+| <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"> | [**RX14.AppImage**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest/download/RX14.AppImage) | Ubuntu 22.04+, Fedora 38+, Arch |
+
+> **China users (中国用户):** If GitHub downloads are slow, the application will automatically provide a mirror download link when checking for updates.
 
 <br>
 
@@ -73,7 +97,7 @@
 
 | | Minimum | Recommended |
 |---|---|---|
-| **OS** | Windows 10 (64-bit) | Windows 11 |
+| **OS** | Windows 10 / macOS 12 / Ubuntu 22.04 | Windows 11 / macOS 14 / Latest LTS |
 | **RAM** | 4 GB | 8 GB |
 | **Disk** | 500 MB | 1 GB |
 | **Display** | 1280 x 720 | 1920 x 1080 |
@@ -82,9 +106,11 @@
 
 ## Installation
 
-Download `RX14-Setup.exe` from the [latest release](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest) and run it. The installer is a single self-contained executable — no additional dependencies required.
+**Windows** — Download `RX14-Setup.exe` and run it. Single self-contained executable, no dependencies needed.
 
-**China users (中国用户):** If GitHub downloads are slow, the application will automatically provide a mirror download link when checking for updates.
+**macOS** — Download `RX14.dmg`, open it, and drag romHEX 14 to your Applications folder.
+
+**Linux** — Download `RX14.AppImage`, make it executable (`chmod +x`), and run it.
 
 <br>
 
