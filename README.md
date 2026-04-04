@@ -8,7 +8,7 @@
 
 <br>
 
-<img src="https://img.shields.io/badge/version-1.0.0--alpha-blue?style=for-the-badge" alt="Version">
+<img src="https://img.shields.io/badge/version-1.0.0--beta1-blue?style=for-the-badge" alt="Version">
 <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
 <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS">
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
@@ -17,7 +17,7 @@
 
 <br><br>
 
-**Professional ECU tuning software with full A2L/HEX support, 30+ AI-powered tools, and WinOLS-compatible workflows.**
+**Professional ECU tuning software with full A2L/HEX/OLS support, AI-powered tools, and WinOLS-compatible workflows.**
 
 <br>
 
@@ -51,34 +51,62 @@
 
 <br>
 
+## What's New in Beta 1
+
+- **WinOLS OLS Import** — Full OLS project file parser with ROM extraction, map records, scaling, dimensions, and byte order detection. Verified on 60+ OLS files across all major ECU families
+- **WinOLS KP Import** — Map pack import dialog with ROM overview bar, offset configuration, auto-detection, and duplicate handling
+- **Map Overlay v2** — Modern perceptual heat gradient, white text with dark outline, gradient-lit cells, frosted glass axis headers, bright selection highlights
+- **Checksum Correction** — 148 WinOLS-compatible checksum DLLs with 32-bit bridge for all major ECU families (EDC15/16/17, ME7/9, MED17, SIMOS, and more)
+- **AI Tuning Functions** — Automated DPF delete, EGR off, AdBlue/SCR off, Decat, Swirl Flap, Speed Limiter, Start-Stop disable with editable values and risk warning
+- **AI DTC Management** — Fault code identification and management
+- **Linked ROM Sync** — Synchronized scrolling between linked ROMs with auto-enabled cursors, [ORI] badge for reference ROMs
+- **Hex View Minimap** — Vertical overview bar next to scrollbar showing ROM data intensity and map regions
+- **View Synchronization** — Seamless scroll position sync between Text and 2D views
+- **Full i18n** — Complete Chinese (简体中文) and Spanish (Español) translations across all dialogs, toolbars, AI assistant, configuration, and checksum interfaces
+
+<br>
+
 ## Features
 
-**A2L & HEX Engine**
+**A2L, HEX & OLS Engine**
 - Full ASAP2 (A2L) parser with characteristic, axis, and measurement support
 - HEX/BIN/S19 file loading with automatic ECU detection
+- WinOLS OLS project import with ROM extraction and map definitions
+- WinOLS KP map pack import with offset auto-detection
 - Side-by-side ROM comparison with byte-level diff visualization
 
 **AI Assistant** — *Industry First*
-- 30+ specialized AI tools for ECU calibration
+- AI-powered ECU calibration assistant (Claude, GPT-4o, Qwen, DeepSeek, Gemini, local models)
 - Intelligent map identification and labeling
 - AI-powered map translation across languages
+- AI tuning functions (DPF, EGR, AdBlue, Decat, Speed Limiter, and more)
+- AI DTC fault code management
 - Natural language queries about your calibration data
 
 **Map Editor**
-- Interactive 2D/3D map visualization
+- Interactive 2D/3D map visualization with modern heat map
 - Drag-to-edit with real-time preview
+- 3D simulation view
 - Map pack import/export for sharing calibrations
 - Patch creation and management (.rxpatch)
 
+**Checksum Correction**
+- 148 ECU-specific checksum algorithms via WinOLS-compatible DLLs
+- Supports Bosch EDC15/16/17, ME7/9, MED17, MG1, SIMOS, and more
+- Verify and correct checksums before flashing
+
 **Project Management**
-- Multi-file projects with linked ROMs
+- Multi-file projects with linked ROMs and synchronized scrolling
+- [ORI] badge for reference/original ROM identification
 - Project registry for quick access
+- Version snapshots with restore capability
 - Auto-save with crash recovery
 - Full undo/redo history
 
 **Multi-Language**
-- English, Spanish, Chinese (简体中文), Thai (ไทย)
+- English, Spanish (Español), Chinese (简体中文), Thai (ไทย)
 - AI-powered map label translation between languages
+- Adaptive CJK toolbar icons
 
 <br>
 
@@ -113,6 +141,20 @@
 **macOS** — Download `RX14.dmg`, open it, and drag romHEX 14 to your Applications folder.
 
 **Linux** — Download `RX14.AppImage`, make it executable (`chmod +x`), and run it.
+
+<br>
+
+## Build from Source
+
+```bash
+# Prerequisites: Qt 6.10+, CMake 3.16+, C++17 compiler
+
+git clone https://github.com/ctabuyo/romHEX14-ECU-Tuning.git
+cd romHEX14-ECU-Tuning
+mkdir build && cd build
+cmake .. -DCMAKE_PREFIX_PATH=/path/to/qt6
+cmake --build . -j$(nproc)
+```
 
 <br>
 
