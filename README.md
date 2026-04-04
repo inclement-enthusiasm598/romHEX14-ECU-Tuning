@@ -53,7 +53,7 @@
 
 ## What's New in Beta 1
 
-- **WinOLS OLS Import** — Full OLS project file parser with ROM extraction, map records, scaling, dimensions, and byte order detection. Verified on 60+ OLS files across all major ECU families
+- **WinOLS OLS Import** — Full OLS project file parser with ROM extraction, map records, scaling, dimensions, and byte order detection. ]
 - **WinOLS KP Import** — Map pack import dialog with ROM overview bar, offset configuration, auto-detection, and duplicate handling
 - **Map Overlay v2** — Modern perceptual heat gradient, white text with dark outline, gradient-lit cells, frosted glass axis headers, bright selection highlights
 - **Checksum Correction** — 148 WinOLS-compatible checksum DLLs with 32-bit bridge for all major ECU families (EDC15/16/17, ME7/9, MED17, SIMOS, and more)
@@ -91,7 +91,7 @@
 - Patch creation and management (.rxpatch)
 
 **Checksum Correction**
-- 148 ECU-specific checksum algorithms via WinOLS-compatible DLLs
+- 148 ECU-specific checksum algorithms
 - Supports Bosch EDC15/16/17, ME7/9, MED17, MG1, SIMOS, and more
 - Verify and correct checksums before flashing
 
@@ -144,17 +144,7 @@
 
 <br>
 
-## Build from Source
-
-```bash
-# Prerequisites: Qt 6.10+, CMake 3.16+, C++17 compiler
-
-git clone https://github.com/ctabuyo/romHEX14-ECU-Tuning.git
-cd romHEX14-ECU-Tuning
-mkdir build && cd build
-cmake .. -DCMAKE_PREFIX_PATH=/path/to/qt6
-cmake --build . -j$(nproc)
-```
+\
 
 <br>
 
